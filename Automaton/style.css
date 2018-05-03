@@ -1,0 +1,257 @@
+
+#tools{
+	
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-bottom:solid 1px #000000;
+	width:calc(100% - 14px);
+	padding:7px;
+	background-color: #255e8d;
+	
+}
+
+#tools button,input,select{
+	
+	margin-left:10px;
+	
+}
+
+
+
+button{
+	
+	padding:5px;
+	background-color:#337ab7;
+	border:solid 1px #2e6da4;	
+	color: #eeeeee;
+	font-family: Arial;
+	border-radius: 3px;
+	cursor:pointer;
+	box-shadow: 1px 1px 7px 0px #000000;
+}
+
+#c{
+	
+	/*background:
+	linear-gradient(
+      rgba(255, 255, 255, 0.8), 
+      rgba(255, 255, 255, 0.8)
+    ),	
+	url("./grassBack.jpg");
+	
+	background-size:cover;*/
+	/*background: url("https://pre00.deviantart.net/d96b/th/pre/i/2012/281/f/7/tileable_classic_grass_patches_with_dirt_texture_by_hhh316-d5h5ahz.jpg") repeat;*/
+	
+	/* background-color:#000000; */
+	
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+	
+}
+
+.info{
+
+	position:absolute;
+	background-color:rgba(255,255,255,0.6);
+	top:0px;
+	right:0px;
+	
+	height:100%;
+	width:0px;
+	
+	transition:width 0.5s;
+	
+	display:none;
+	
+	overflow-y:scroll;
+	
+}
+
+.inside{
+	
+		
+	
+}
+
+.progress{
+	background-color: white;
+	height:10px;
+	width:0px;
+	display:none;
+}
+
+.bar{
+	height:30px;
+	width:210px;
+	display: inline-block;
+	outline: #000 1px solid;
+	background-color: #2e6da4;
+}
+
+input:not([type=range]){
+	padding:5px;
+	background-color:#337ab7;
+	border:solid 1px #2e6da4;	
+	color: #eeeeee;
+	font-family: Arial;
+	border-radius: 3px;
+	box-shadow: 1px 1px 7px 0px #000000;
+}
+
+.range{
+}
+
+.videoControl{
+	
+	position:absolute;
+	width:calc(100% - 30px);
+	left:0px;
+	bottom:0px;
+	padding:15px;
+	opacity:0.2;
+	
+	
+}
+
+.videoControl:hover{
+	
+	opacity:1;
+	
+}
+
+.videoControl center img{
+	height:12px;
+}
+
+
+.videoControl center #videotime{
+	
+	width:80%;
+	margin-left:10px;
+	
+}
+
+.videoControl center #videotimespan{
+	
+	margin-left:20px;
+	
+}
+
+input::placeholder{
+	color:#ddd;
+}
+
+select{
+	padding:5px;
+	background-color:#337ab7;
+	border:solid 1px #2e6da4;	
+	color: #eeeeee;
+	font-family: Arial;
+	border-radius: 3px;
+	cursor:pointer;
+	box-shadow: 1px 1px 7px 0px #000000;
+}
+
+option{
+	padding:5px;
+	background-color:#337ab7;
+	color: #eeeeee;
+	font-family: Arial;
+}
+
+span{
+	font-family: Arial;
+}
+
+/*/////////////////////////////////////////START INPUT RANGE STYLE////////////////////////////////////////////////////*/
+
+
+input[type=range].range {
+  -webkit-appearance: none;
+  /* width: 100%; */
+  margin: 6.5px 0;
+}
+input[type=range].range:focus {
+  outline: none;
+}
+input[type=range].range::-webkit-slider-runnable-track {
+  /* width: 100%; */
+  height: 10px;
+  cursor: pointer;
+  box-shadow: 0.4px 0.4px 0.4px #000000, 0px 0px 0.4px #0d0d0d;
+  background: #337ab7;
+  border-radius: 1px;
+  border: 1px solid #2e6da4;
+}
+input[type=range].range::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 1px solid #010101;
+  height: 23px;
+  width: 13px;
+  border-radius: 4px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7.5px;
+}
+input[type=range].range:focus::-webkit-slider-runnable-track {
+  background: #3682c3;
+}
+input[type=range].range::-moz-range-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  box-shadow: 0.4px 0.4px 0.4px #000000, 0px 0px 0.4px #0d0d0d;
+  background: #337ab7;
+  border-radius: 1px;
+  border: 1px solid #2e6da4;
+}
+input[type=range].range::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 1px solid #010101;
+  height: 23px;
+  width: 13px;
+  border-radius: 4px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range].range::-ms-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range].range::-ms-fill-lower {
+  background: #3072ab;
+  border: 1px solid #2e6da4;
+  border-radius: 2px;
+  box-shadow: 0.4px 0.4px 0.4px #000000, 0px 0px 0.4px #0d0d0d;
+}
+input[type=range].range::-ms-fill-upper {
+  background: #337ab7;
+  border: 1px solid #2e6da4;
+  border-radius: 2px;
+  box-shadow: 0.4px 0.4px 0.4px #000000, 0px 0px 0.4px #0d0d0d;
+}
+input[type=range].range::-ms-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 1px solid #010101;
+  height: 23px;
+  width: 13px;
+  border-radius: 4px;
+  background: #ffffff;
+  cursor: pointer;
+  height: 10px;
+}
+input[type=range].range:focus::-ms-fill-lower {
+  background: #337ab7;
+}
+input[type=range].range:focus::-ms-fill-upper {
+  background: #3682c3;
+}
+
